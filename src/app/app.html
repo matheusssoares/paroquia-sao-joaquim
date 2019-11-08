@@ -1,0 +1,66 @@
+<ion-menu [content]="content">
+    <ion-content class="bg-menu">
+        <div class="itens-menu bg-menu">
+            <ion-list no-lines color="primary">
+                <button color="primary" ion-item (click)="inicio()">
+                    <ion-icon name="ios-home-outline" item-start></ion-icon>
+                    Início
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="paroquia()">
+                    <ion-icon name="ios-map-outline" item-start></ion-icon>
+                    A Paróquia
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="agenda()">
+                    <ion-icon name="ios-calendar-outline" item-start></ion-icon>
+                    Agenda
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="noticias()">
+                    <ion-icon name="ios-paper-outline" item-start></ion-icon>
+                    Notícias
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="comunidades()">
+                    <ion-icon name="ios-people-outline" item-start></ion-icon>
+                    Comunidades
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="missas()">
+                    <ion-icon name="ios-notifications-outline" item-start></ion-icon>
+                    Missas
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="oracoes()">
+                    <ion-icon name="ios-bookmarks-outline" item-start></ion-icon>
+                    Orações
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="sacramentos()">
+                    <ion-icon name="ios-bookmark-outline" item-start></ion-icon>
+                    Sacramentos
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="dizimista()">
+                    <ion-icon name="ios-filing-outline" item-start></ion-icon>
+                    Dizimista
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="pedir_oracao()">
+                    <ion-icon name="ios-megaphone-outline" item-start></ion-icon>
+                    Pedir Oração
+                </button>
+                <hr>
+                <button color="primary" ion-item (click)="contatos()">
+                    <ion-icon name="ios-call-outline" item-start></ion-icon>
+                    Contatos
+                </button>
+                <hr>
+
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

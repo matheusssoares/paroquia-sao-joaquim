@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Pedir Oração</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="dizimista">
+    <div class="header-diz">
+      <h3 text-center>Observação</h3>
+    </div>
+    <p text-justify>
+      Seu pedido de oração será levado nas intenções da próxima Santa Missa ou Celebração. Deus abençoe você e sua família!
+    </p>
+  </div>
+  <br>
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nome Completo</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Tipo de Oração</ion-label>
+      <ion-select okText="Selecionar" cancelText="Cancelar">
+        <ion-option value="nes">Oração</ion-option>
+        <ion-option value="n64">Visita</ion-option>
+        <ion-option value="ps">Intenções na Missa</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Descreva seu pedido</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button ion-button block>Enviar Solicitação</button>
+  </ion-list>
+</ion-content>
